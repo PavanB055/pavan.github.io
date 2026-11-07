@@ -1509,15 +1509,16 @@ document.querySelectorAll(".rv,.tile").forEach(el => io.observe(el));
     im.src = dir + encodeURIComponent(list[0]); return im;
   };
   const ART = [
-    { file:"IMG_4500.jpg", title:"Portrait I",   note:"Charcoal on paper" },
-    { file:"portrait-02.PNG", title:"Portrait II",  note:"Charcoal on paper" },
-    { file:"portrait-03.jpg", title:"Portrait III", note:"Charcoal" },
-    { file:"portrait-05.jpg", title:"Portrait V",   note:"Charcoal" },
-    { file:"portrait-06.jpg", title:"Portrait VI",  note:"Charcoal" },
-    { file:"portrait-07.jpg", title:"Portrait VII", note:"Charcoal" },
-    { file:"portrait-08.jpg", title:"Portrait VIII",note:"Charcoal" },
-    { file:"IMG_4486(1).JPG", title:"Portrait IX",  note:"Charcoal" },
-    { file:"IMG_4493.JPG", title:"Portrait X",   note:"Charcoal" }
+    { file:"IMG_4500.jpg", title:"I",   note:"Charcoal on paper" },
+    { file:"portrait-02.PNG", title:"II",  note:"Charcoal on paper" },
+    { file:"portrait-03.jpg", title:"III", note:"Charcoal" },
+    { file:"portrait-05.jpg", title:"V",   note:"Charcoal" },
+    { file:"portrait-06.jpg", title:"VI",  note:"Charcoal" },
+    { file:"portrait-07.jpg", title:"VII", note:"Charcoal" },
+    { file:"portrait-08.jpg", title:"VIII",note:"Charcoal" },
+    { file:"IMG_4486(1).JPG", title:"IX",  note:"Charcoal" },
+    { file:"IMG_4493.JPG", title:"X",   note:"Charcoal" },
+    { file:"portrait.jpeg", title:"X1",   note:"Charcoal" }
   ];
   qa("[data-art]").forEach(fig => {
     const a = ART[+fig.dataset.art]; if(!a) return;
